@@ -1,4 +1,4 @@
-# CS2240 - Western Michigan University
+#CS2240 - Western Michigan University
 
 Here, you may find the following:
 
