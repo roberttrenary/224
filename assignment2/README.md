@@ -8,7 +8,7 @@ To accomplish the directory traversal, you should write a recursive function usi
 void find_unique_files(const char*, char**);
 ```
 
-The function should take a character array representing a filename and an array of strings. If it is called on a directory, it should move into that directory and continue its traversal. If it is called on a text file, it should generate a hash for the text file, check the list of strings to make sure that it does not already contain that hash, then insert it if it doesn't. If it does, you know that you have found a duplicate.
+The function should take a character array representing a filename and an array of strings. If it is called on a directory, it should move into that directory and continue its traversal. If it is called on a text file, it should generate a hash for the text file, check the list of hashes to make sure that it does not already contain that hash, then insert it if it doesn't. If it does, you know that you have found a duplicate.
 
 The file’s hash will be calculated using the SHA1 hashing algorithm. A library for calculating this hash can be found in `<openssl/sha.h>`. **_IN ORDER TO USE THIS LIBRARY YOU MUST HAVE OPENSSL INSTALLED AND LINK WITH THE `-lcrypto` FLAG_**. It can be installed via your favorite package manager (`apt-get`, `brew`, etc) and you can figure out how to use it via its man-page (`man sha`).
 
